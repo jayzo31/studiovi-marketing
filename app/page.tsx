@@ -456,7 +456,7 @@ const LandingPage = () => {
           gap: '16px',
         }}>
           <p style={{ fontSize: '13px', color: t.textMuted }}>
-            © 2026 StudioVid™. Operated by Zojutsu LLC. All rights reserved.
+            © 2026 StudioVid™. Operated by <a href="https://zojutsu.com" target="_blank" rel="noopener noreferrer" style={{ color: t.textMuted, textDecoration: 'underline' }}>Zojutsu LLC</a>. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: '16px' }}>
             {['Twitter', 'YouTube', 'Discord'].map((social) => (
