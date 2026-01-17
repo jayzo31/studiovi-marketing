@@ -30,7 +30,7 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
               width: '36px',
               height: '36px',
               borderRadius: '10px',
-              background: 'linear-gradient(135deg, #22C55E 0%, #10B981 100%)',
+              background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',

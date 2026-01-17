@@ -36,8 +36,8 @@ const LandingPage = () => {
       text: '#EDEDED',
       textSecondary: '#999999',
       textMuted: '#737373',
-      accent: '#22C55E',
-      accentGradient: 'linear-gradient(135deg, #22C55E 0%, #10B981 100%)',
+      accent: '#3b82f6',
+      accentGradient: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
     },
     light: {
       bg: '#CBCED5',
@@ -48,8 +48,8 @@ const LandingPage = () => {
       text: '#1A1A1C',
       textSecondary: '#4B5563',
       textMuted: '#6B7280',
-      accent: '#22C55E',
-      accentGradient: 'linear-gradient(135deg, #22C55E 0%, #10B981 100%)',
+      accent: '#3b82f6',
+      accentGradient: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
     }
   };
 
@@ -61,7 +61,7 @@ const LandingPage = () => {
     { icon: Image, title: 'AI Thumbnails', desc: 'Create scroll-stopping thumbnails with A/B testing.', color: '#F43F5E' },
     { icon: Search, title: 'SEO Optimizer', desc: 'Optimize titles, descriptions, and tags for maximum reach.', color: '#3B82F6' },
     { icon: MessageSquare, title: 'Comment AI', desc: 'Engage your audience with AI-powered comment responses.', color: '#F97316' },
-    { icon: PieChart, title: 'Analytics Hub', desc: 'Deep insights into what\'s working and what\'s not.', color: '#22C55E' },
+    { icon: PieChart, title: 'Analytics Hub', desc: 'Deep insights into what\'s working and what\'s not.', color: '#3b82f6' },
   ];
 
   const steps = [
@@ -109,7 +109,7 @@ const LandingPage = () => {
         }
         .btn-primary:hover {
           transform: translateY(-2px);
-          box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
+          box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
         }
 
         .btn-secondary {
@@ -244,7 +244,7 @@ const LandingPage = () => {
           gap: '8px',
           padding: '8px 16px',
           borderRadius: '20px',
-          backgroundColor: darkMode ? 'rgba(34, 197, 94, 0.1)' : 'rgba(34, 197, 94, 0.08)',
+          backgroundColor: darkMode ? 'rgba(59, 130, 246, 0.1)' : 'rgba(59, 130, 246, 0.08)',
           border: `1px solid ${t.accent}30`,
           marginBottom: '24px',
         }}>
@@ -345,7 +345,7 @@ const LandingPage = () => {
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   fontSize: '22px', fontWeight: 700, color: 'white',
                   margin: '0 auto 20px',
-                  boxShadow: '0 8px 20px rgba(34, 197, 94, 0.3)',
+                  boxShadow: '0 8px 20px rgba(59, 130, 246, 0.3)',
                 }}>
                   {step.num}
                 </div>
@@ -361,8 +361,8 @@ const LandingPage = () => {
       <section style={{
         padding: '100px 60px',
         background: darkMode
-          ? 'linear-gradient(180deg, rgba(34, 197, 94, 0.08) 0%, rgba(18, 18, 18, 0) 100%)'
-          : 'linear-gradient(180deg, rgba(34, 197, 94, 0.05) 0%, rgba(203, 206, 213, 0) 100%)',
+          ? 'linear-gradient(180deg, rgba(59, 130, 246, 0.08) 0%, rgba(18, 18, 18, 0) 100%)'
+          : 'linear-gradient(180deg, rgba(59, 130, 246, 0.05) 0%, rgba(203, 206, 213, 0) 100%)',
         textAlign: 'center',
       }}>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
@@ -384,13 +384,13 @@ const LandingPage = () => {
 
           <div style={{ display: 'flex', gap: '24px', justifyContent: 'center', fontSize: '13px', color: t.textMuted, flexWrap: 'wrap' }}>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <Check size={14} color="#22C55E" /> Free forever plan
+              <Check size={14} color="#3b82f6" /> Free forever plan
             </span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <Check size={14} color="#22C55E" /> No credit card required
+              <Check size={14} color="#3b82f6" /> No credit card required
             </span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <Check size={14} color="#22C55E" /> Cancel anytime
+              <Check size={14} color="#3b82f6" /> Cancel anytime
             </span>
           </div>
         </div>

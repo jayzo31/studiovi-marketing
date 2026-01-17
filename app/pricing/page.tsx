@@ -170,7 +170,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     <div className="border-b border-white/10">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between py-4 text-left font-medium hover:text-green-500 transition-colors"
+        className="flex w-full items-center justify-between py-4 text-left font-medium hover:text-blue-500 transition-colors"
       >
         {question}
         <ChevronDown className={`h-5 w-5 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
@@ -223,7 +223,7 @@ export default function PricingPage() {
                 width: '48px',
                 height: '24px',
                 borderRadius: '9999px',
-                background: isAnnual ? '#22C55E' : '#333',
+                background: isAnnual ? '#3b82f6' : '#333',
                 position: 'relative',
                 border: 'none',
                 cursor: 'pointer',
@@ -246,8 +246,8 @@ export default function PricingPage() {
               <span style={{
                 marginLeft: '8px',
                 padding: '2px 8px',
-                background: 'rgba(34, 197, 94, 0.1)',
-                color: '#22C55E',
+                background: 'rgba(59, 130, 246, 0.1)',
+                color: '#3b82f6',
                 borderRadius: '4px',
                 fontSize: '12px'
               }}>
@@ -277,12 +277,12 @@ export default function PricingPage() {
                 style={{
                   position: 'relative',
                   borderRadius: '16px',
-                  border: plan.popular ? '1px solid #22C55E' : '1px solid rgba(255,255,255,0.1)',
+                  border: plan.popular ? '1px solid #3b82f6' : '1px solid rgba(255,255,255,0.1)',
                   background: '#0A0A0A',
                   padding: '20px',
                   display: 'flex',
                   flexDirection: 'column',
-                  boxShadow: plan.popular ? '0 8px 32px rgba(34, 197, 94, 0.1)' : 'none'
+                  boxShadow: plan.popular ? '0 8px 32px rgba(59, 130, 246, 0.1)' : 'none'
                 }}
               >
                 {plan.popular && (
@@ -291,7 +291,7 @@ export default function PricingPage() {
                     top: '-12px',
                     left: '50%',
                     transform: 'translateX(-50%)',
-                    background: '#22C55E',
+                    background: '#3b82f6',
                     color: 'white',
                     padding: '4px 12px',
                     borderRadius: '9999px',
@@ -306,7 +306,7 @@ export default function PricingPage() {
                   width: '40px',
                   height: '40px',
                   borderRadius: '12px',
-                  background: `linear-gradient(135deg, ${plan.color.includes('gray') ? '#6B7280, #4B5563' : plan.color.includes('blue') ? '#3B82F6, #06B6D4' : plan.color.includes('green') ? '#22C55E, #10B981' : plan.color.includes('purple') ? '#A855F7, #EC4899' : '#F59E0B, #F97316'})`,
+                  background: `linear-gradient(135deg, ${plan.color.includes('gray') ? '#6B7280, #4B5563' : plan.color.includes('blue') ? '#3B82F6, #06B6D4' : plan.color.includes('green') ? '#3b82f6, #2563eb' : plan.color.includes('purple') ? '#A855F7, #EC4899' : '#F59E0B, #F97316'})`,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -316,7 +316,7 @@ export default function PricingPage() {
                 </div>
 
                 <h3 style={{ fontSize: '18px', fontWeight: 700 }}>{plan.name}</h3>
-                <p style={{ fontSize: '12px', color: '#22C55E', fontWeight: 500, marginBottom: '4px' }}>{plan.tagline}</p>
+                <p style={{ fontSize: '12px', color: '#3b82f6', fontWeight: 500, marginBottom: '4px' }}>{plan.tagline}</p>
                 <p style={{ fontSize: '12px', color: '#999', marginBottom: '12px' }}>{plan.description}</p>
 
                 <div style={{ marginBottom: '16px' }}>
@@ -336,7 +336,7 @@ export default function PricingPage() {
                     marginBottom: '16px',
                     width: '100%',
                     justifyContent: 'center',
-                    background: plan.popular ? 'linear-gradient(135deg, #22C55E 0%, #10B981 100%)' : undefined
+                    background: plan.popular ? 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)' : undefined
                   }}
                 >
                   {plan.cta}
@@ -388,7 +388,7 @@ export default function PricingPage() {
                   <th style={{ textAlign: 'left', padding: '16px', fontWeight: 600 }}>Feature</th>
                   <th style={{ textAlign: 'center', padding: '16px 12px', fontWeight: 600, fontSize: '14px' }}>Free</th>
                   <th style={{ textAlign: 'center', padding: '16px 12px', fontWeight: 600, fontSize: '14px' }}>Creator</th>
-                  <th style={{ textAlign: 'center', padding: '16px 12px', fontWeight: 600, fontSize: '14px', color: '#22C55E' }}>Studio</th>
+                  <th style={{ textAlign: 'center', padding: '16px 12px', fontWeight: 600, fontSize: '14px', color: '#3b82f6' }}>Studio</th>
                   <th style={{ textAlign: 'center', padding: '16px 12px', fontWeight: 600, fontSize: '14px' }}>Agency</th>
                   <th style={{ textAlign: 'center', padding: '16px 12px', fontWeight: 600, fontSize: '14px' }}>Enterprise</th>
                 </tr>
@@ -396,7 +396,7 @@ export default function PricingPage() {
                   <th style={{ textAlign: 'left', padding: '8px 16px', fontWeight: 400, color: '#999', fontSize: '14px' }}>Monthly Price</th>
                   <th style={{ textAlign: 'center', padding: '8px 12px', fontWeight: 600 }}>$0</th>
                   <th style={{ textAlign: 'center', padding: '8px 12px', fontWeight: 600 }}>$39</th>
-                  <th style={{ textAlign: 'center', padding: '8px 12px', fontWeight: 600, color: '#22C55E' }}>$89</th>
+                  <th style={{ textAlign: 'center', padding: '8px 12px', fontWeight: 600, color: '#3b82f6' }}>$89</th>
                   <th style={{ textAlign: 'center', padding: '8px 12px', fontWeight: 600 }}>$299</th>
                   <th style={{ textAlign: 'center', padding: '8px 12px', fontWeight: 600 }}>$999</th>
                 </tr>
@@ -418,7 +418,7 @@ export default function PricingPage() {
                         textAlign: 'center',
                         padding: '12px',
                         fontSize: '14px',
-                        background: vidx === 2 ? 'rgba(34, 197, 94, 0.05)' : undefined
+                        background: vidx === 2 ? 'rgba(59, 130, 246, 0.05)' : undefined
                       }}>
                         {value === '-' ? (
                           <span style={{ color: 'rgba(255,255,255,0.2)' }}>-</span>

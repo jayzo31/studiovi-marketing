@@ -27,7 +27,7 @@ export default function ComingSoonPage() {
           width: '80px',
           height: '80px',
           borderRadius: '50%',
-          background: 'linear-gradient(135deg, #22C55E 0%, #10B981 100%)',
+          background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -53,7 +53,7 @@ export default function ComingSoonPage() {
           marginBottom: '32px'
         }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginBottom: '16px' }}>
-            <Bell style={{ width: '20px', height: '20px', color: '#22C55E' }} />
+            <Bell style={{ width: '20px', height: '20px', color: '#3b82f6' }} />
             <span style={{ fontWeight: 600 }}>Get Notified</span>
           </div>
           <form onSubmit={(e) => e.preventDefault()} style={{ display: 'flex', gap: '12px' }}>
