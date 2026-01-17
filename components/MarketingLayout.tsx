@@ -75,7 +75,7 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
           gap: '16px',
         }}>
           <p style={{ fontSize: '13px', color: '#737373' }}>
-            © 2026 StudioVid™. Operated by Zojutsu LLC. All rights reserved.
+            © 2026 StudioVid™. Operated by <a href="https://zojutsu.com" target="_blank" rel="noopener noreferrer" style={{ color: '#737373', textDecoration: 'underline' }}>Zojutsu LLC</a>. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: '24px' }}>
             <Link href="/privacy/" style={{ fontSize: '13px', color: '#737373', textDecoration: 'none' }}>Privacy</Link>
